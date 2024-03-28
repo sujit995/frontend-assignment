@@ -19,7 +19,7 @@ const TicketSection = () => {
           </p>
         </div>
         <div className="flex flex-row justify-between align-middle items-center gap-2 md:gap-0 mx-2 md:m-10">
-          <div>
+          <div className="cursor-pointer">
             <img src="images/left.png" alt="ILeft" />
           </div>
           <div className="flex flex-col md:flex-row gap-4 w-full md:w-[80%] align-middle justify-center">
@@ -27,7 +27,7 @@ const TicketSection = () => {
           <Ticket image="images/Ticket.png" title={"Las Vegas Aviators"} alt={undefined} />
           <Ticket image="images/Ticket.png" title={"Las Vegas Aviators"} alt={undefined} />
           </div>
-          <div>
+          <div className="cursor-pointer">
             <img src="images/right.png" alt="IRight" />
           </div>
         </div>
