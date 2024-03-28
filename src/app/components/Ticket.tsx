@@ -11,7 +11,7 @@ const Ticket: React.FC<CardProps> = ({ image, title, alt }) => {
   return (
     <div className="w-full md:w-[25%] box-border bg-white dark:bg-[#3B3E47] p-3 relative shadow-md">
        <div>
-        <img src={image} alt={alt} />
+        <img src={image} alt={alt} className="h-full w-full" />
       </div>
       <div
         className={`border-t-[.5px] border-dashed border-[#666a74] dark:border-[#dfdfdf] mt-5 relative`}

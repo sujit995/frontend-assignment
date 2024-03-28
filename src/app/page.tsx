@@ -47,7 +47,7 @@ const Home: React.FC = () => {
           </div>
           <Switcher />
         </div>
-        <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 ">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {carddata.map((item, index) => (
             <Card
               key={index}
@@ -60,8 +60,9 @@ const Home: React.FC = () => {
           ))}
           <div className="w-full box-border">
             <div className="bg-white dark:bg-gray-800 m-4 p-2 align-middle justify-center">
-              <div>
-                <img src="images/unnamed.png" alt="unnamedimage" />
+              <div className="relative">
+                <img src="images/unnamed.png" alt="unnamedimage" className="h-full w-full" />
+                <h4 className="absolute bg-black px-4 py-1 top-0 right-0 text-white text-[12.8px] font-inter font-extrabold">Ad</h4>
               </div>
               <h3 className="font-semibold text-[20px] text-[#000000] dark:text-[#ffffff] py-4 text-center">
                 Advertisement title
